@@ -2,8 +2,8 @@ import Head from 'next/head';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import Image from 'next/image';
-// import AddModeratorOutlinedIcon from '@mui/icons-material/AddModeratorOutlined';
-// import DirectionsCarFilledOutlinedIcon from '@mui/icons-material/DirectionsCarFilledOutlined';
+import AddModeratorOutlinedIcon from '@mui/icons-material/AddModeratorOutlined';
+import DirectionsCarFilledOutlinedIcon from '@mui/icons-material/DirectionsCarFilledOutlined';
 
 export default function Home() {
   return (
@@ -55,7 +55,7 @@ export default function Home() {
 
       {/* quick glance section */}
       <section>
-        <div className='flex flex-col lg:flex-row items-center justify-around my-5 gap-10 p-16 lg:px-24 py-6'>
+        <div className='flex flex-col md:flex-row items-center justify-around my-5 gap-10 p-16 lg:px-24 py-6'>
           {/* glance col */}
           <div className='lg:w-1/2 flex flex-col gap-4'>
             <h2 className='capitalize font-medium text-3xl text-[#129CE9] lg:w-2/3 w-full'>
@@ -133,57 +133,59 @@ export default function Home() {
 
       {/* car ride section */}
       <section>
-        <div className='my-10 mx-auto'>
-          <div className='flex flex-col items-center'>
-            
-          <div className='bg-[#FFFDE8] rounded-md p-4 max-w-[300px] my-5'>
-            <div className='flex items-center gap-3'>
-              <div className='rounded-full bg-white'>
-                {/* <AddModeratorOutlinedIcon className='text-[#776D02]' /> */}
+        <div className='my-10 lg:p-6 mx-auto'>
+          <div className='flex lg:flex-row flex-col items-center justify-center'>
+            <div className='flex flex-col items-center'>
+              <div className='bg-[#DCFFFD] rounded-2xl p-4 max-w-[300px] lg:mb-[-5%] lg:ml-[-80%]'>
+                <div className='flex items-center gap-3'>
+                  <div className='rounded-full bg-white p-2'>
+                    <DirectionsCarFilledOutlinedIcon className='text-[#00615C]' />
+                  </div>
+                  <h3 className='text-base font-semibold capitalize'>
+                    Ride in style,every time
+                  </h3>
+                </div>
+                <p className='text-xs py-3'>
+                  Tired of old cars and buses? Try out our selection of brand
+                  new cars and share your transit moments with your friends
+                </p>
               </div>
-              <h3 className='text-base font-semibold'>Security</h3>
-            </div>
-            <p className='text-xs'>
-              At enabled dashcams and panic/SOS buttons are onboard to keep you
-              safe while in transit.
-            </p>
-          </div>
-          <div className='bg-[#DCFFFD] rounded-md p-4 max-w-[300px] my-5'>
-            <div className='flex items-center gap-3'>
-              <div className='rounded-full bg-white'>
-                {/* <DirectionsCarFilledOutlinedIcon className='text-[#00615C]' /> */}
+              <Image
+                src='/img/car11.png'
+                width={600}
+                height={300}
+                loading='lazy'
+                alt='car'
+                className='mx-auto car-shadow'
+              />
+              <div className='bg-[#FFE5FA] rounded-2xl p-4 max-w-[300px] my-5 lg:mt-[-5%] lg:ml-[-60%]'>
+                <div className='flex items-center gap-3'>
+                  <div className='rounded-full bg-white p-2'>
+                    <DirectionsCarFilledOutlinedIcon className='text-[#2096D9]' />
+                  </div>
+                  <h3 className='text-base font-semibold'>
+                    Fixed Daily Transit
+                  </h3>
+                </div>
+                <p className='text-xs py-3'>
+                  Take the edge off by scheduling daily recurring trips that
+                  take you to and from work, church, mosque or anywhere
+                </p>
               </div>
-              <h3 className='text-base font-semibold'>
-                Ride in style,every time
-              </h3>
             </div>
-            <p className='text-xs'>
-              Tired of old cars and buses? Try out our selection of brand new
-              cars and share your transit moments with your friends
-            </p>
-          </div>
-          <div className='bg-[#FFE5FA] rounded-md p-4 max-w-[300px] my-5'>
-            <div className='flex items-center gap-3'>
-              <div className='rounded-full bg-white'>
-                {/* <DirectionsCarFilledOutlinedIcon className='text-[#2096D9]' /> */}
+            <div className='bg-[#FFFDE8] rounded-2xl p-4 max-w-[300px] lg:mt-[-20%] lg:ml-[-13%]'>
+              <div className='flex items-center gap-3'>
+                <div className='rounded-full bg-white p-2'>
+                  <AddModeratorOutlinedIcon className='text-[#776D02]' />
+                </div>
+                <h3 className='text-base font-semibold'>Security</h3>
               </div>
-              <h3 className='text-base font-semibold'>Fixed Daily Transit</h3>
+              <p className='text-xs py-3'>
+                At enabled dashcams and panic/SOS buttons are onboard to keep
+                you safe while in transit.
+              </p>
             </div>
-            <p className='text-xs'>
-              Take the edge off by scheduling daily recurring trips that take
-              you to and from work, church, mosque or anywhere
-            </p>
           </div>
-          </div>
-
-          <Image
-            src='/img/car.png'
-            width={600}
-            height={300}
-            loading='lazy'
-            alt='car'
-            className='mx-auto'
-          />
         </div>
       </section>
 
@@ -211,7 +213,7 @@ export default function Home() {
       </section>
 
       {/* Book a ride section */}
-      <div className='text-center my-10'>
+      <div className='text-center my-10 p-6'>
         <h3 className='text-2xl text-[#129CE9] capitalize font-[600]'>
           Book a ride to start moving in style
         </h3>
@@ -236,8 +238,8 @@ export default function Home() {
           Dont Just Take our word for it
         </h3>
         <p className='text-xs leading-6 lg:text-sm text-white/80'>
-          See what our Club 5.0 members are saying. Club 5.0 the are first 
-         50 individuals to experience LagosRide
+          See what our Club 5.0 members are saying. Club 5.0 the are first 50
+          individuals to experience LagosRide
         </p>
 
         <div className='flex items-center flex-col justify-center p-4'>
@@ -265,7 +267,7 @@ export default function Home() {
       </div>
 
       {/* drive with us */}
-      <div className='text-center my-10'>
+      <div className='text-center my-10 p-6'>
         <h3 className='text-2xl text-[#129CE9] capitalize font-[600] my-3'>
           Drive with us
         </h3>
@@ -280,7 +282,7 @@ export default function Home() {
       </div>
 
       {/* want a free ride */}
-      <div className='text-center mt-10 py-5 bg-[#f4f4f4]'>
+      <div className='text-center mt-10 px-6 py-5 bg-[#f4f4f4]'>
         <h3 className='text-2xl text-[#129CE9] capitalize font-[600]'>
           Want a free ride? Download Now
         </h3>

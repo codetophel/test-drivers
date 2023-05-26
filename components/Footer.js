@@ -3,8 +3,8 @@ import React from 'react';
 
 const Footer = () => {
   return (
-    <div className=' bg-darkNav px-6 py-6 gap-5 flex flex-col lg:flex-row items-start justify-around text-sm text-white'>
-      <div className='flex flex-col items-start gap-4 lg:w-1/4'>
+    <div className=' bg-darkNav px-6 py-6 gap-5 flex flex-col md:flex-row items-start lg:px-24 justify-around text-sm text-white'>
+      <div className='flex flex-col items-start gap-4 md:w-1/4'>
         <Image
           src='/img/logoo.png'
           width={150}
@@ -23,7 +23,7 @@ const Footer = () => {
         <h3 className='font-bold'>Powered by zeno</h3>
       </div>
 
-      <div className='flex flex-col lg:flex-row items-start gap-5 lg:gap-28 text-white'>
+      <div className='flex flex-col md:flex-row items-start gap-5 md:gap-28 text-white'>
         {/* footer menu */}
         <div>
           <ul className='flex flex-col items-start gap-2 lg:gap-4'>
@@ -37,7 +37,7 @@ const Footer = () => {
         </div>
 
         {/* contact us */}
-        <div className='flex flex-col gap-2 lg:gap-4'>
+        <div className='flex flex-col gap-2 md:gap-4'>
           <h3 className='font-bold uppercase'>Contact Us</h3>
 
           <p className='text-footerLink'>
