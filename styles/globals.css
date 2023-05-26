@@ -57,7 +57,7 @@ a {
 }
 
 .car-shadow {
-  filter: drop-shadow(5px 20px 10px #555);
+  filter: drop-shadow(20px 20px 20px #555);
 }
 
 .ride-box {

@@ -9,14 +9,14 @@ const overview = () => {
       <div className='bg-[#D9D9D9]'>
         <Nav />
 
-        <div className='p-6 lg:py-10 lg:px-24 '>
+        <div className='p-6 lg:py-10 lg:px-24 lg:pb-32'>
           <Image
             src='/img/chaffeur.png'
-            width={800}
+            width={700}
             height={300}
             loading='lazy'
             alt='car'
-            className='overview-img ml-auto drop-shadow-lg lg:block hidden relative'
+            className='overview-img mx-auto car-shadow lg:block hidden relative border-dashed p-[-12px] border-white border-[1px]'
           />
 
           <Image
@@ -28,7 +28,7 @@ const overview = () => {
             className='overview-img mx-auto drop-shadow-lg lg:hidden relative'
           />
 
-          <div className='lg:rounded-t-[43px] max-w-[350px] bg-[#F1F3F4] lg:max-w-fit mx-auto p-6 lg:pr-20 lg:absolute lg:bottom-[12%] lg:left-[22%]'>
+          <div className='lg:rounded-t-[43px] max-w-[350px] bg-[#F1F3F4] lg:max-w-fit mx-auto p-6 lg:pr-20 lg:py-6 lg:absolute lg:bottom-[12%] lg:left-[10%]'>
             <h3 className='text-lg lg:text-2xl font-bold text-[#129CE9]'>
               Become a <br /> Lagosride driver
             </h3>

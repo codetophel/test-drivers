@@ -3,7 +3,7 @@ import React from 'react';
 
 const Footer = () => {
   return (
-    <div className=' bg-darkNav px-6 py-6 gap-5 flex flex-col md:flex-row items-start lg:px-24 justify-around text-sm text-white'>
+    <div className=' bg-darkNav px-6 py-6 gap-5 flex flex-col md:flex-row items-start lg:px-24 justify-between text-sm text-white'>
       <div className='flex flex-col items-start gap-4 md:w-1/4'>
         <Image
           src='/img/logoo.png'
