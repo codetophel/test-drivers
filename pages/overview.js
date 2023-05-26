@@ -2,8 +2,11 @@ import React from 'react';
 import Footer from '../components/Footer';
 import Nav from '../components/Nav';
 import Image from 'next/image';
+import { useRouter } from 'next/router';
 
-const overview = () => {
+function Overview () {
+  const router = useRouter();
+
   return (
     <main>
       <div className='bg-[#D9D9D9]'>
@@ -16,7 +19,7 @@ const overview = () => {
             height={300}
             loading='lazy'
             alt='car'
-            className='overview-img mx-auto car-shadow lg:block hidden relative border-dashed p-[-12px] border-white border-[1px]'
+            className='overview-img mx-auto car-shadow lg:block hidden relative'
           />
 
           <Image
@@ -40,6 +43,7 @@ const overview = () => {
               <button
                 className='rounded-sm text-base btn text-white px-6 py-2 uppercase
           '
+                onClick={() => router.push('register')}
               >
                 Proceed
               </button>
@@ -73,6 +77,7 @@ const overview = () => {
           <button
             className='rounded-sm text-base btn text-white px-6 py-2 uppercase
           '
+            onClick={() => router.push('register')}
           >
             Proceed
           </button>
@@ -88,4 +93,4 @@ const overview = () => {
   );
 };
 
-export default overview;
+export default Overview;

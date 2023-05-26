@@ -1,7 +1,23 @@
-import React from 'react';
+import React from 'react'
+import Hero from '../components/Hero'
+import Steps from '../components/Steps'
+import Need from '../components/Need'
+import Nav from '../components/Nav'
+import Footer from '../components/Footer'
+import Subscribe from '../components/Subscribe'
 
-const Home = () => {
-  return <div>Home</div>;
-};
+function Home() {
+  return (
+    <main>
+      <Nav />
+      <Hero />
+      <Steps />
+      <Need />
+      <Subscribe />
+      <Footer />
 
-export default Home;
+    </main>
+  )
+}
+
+export default Home

@@ -1,8 +1,12 @@
 import { MenuOutlined } from '@mui/icons-material';
 import Image from 'next/image';
 import React from 'react';
+import { useRouter } from 'next/router';
+import Link from 'next/link';
 
 function Navbar() {
+  const router = useRouter();
+
   return (
     <div>
       {/* web navbar */}
@@ -19,16 +23,27 @@ function Navbar() {
         {/* nav menu */}
         <div className='flex items-center gap-16'>
           <ul className='text-base text-[#fff] flex items-center gap-10'>
-            <li>Home</li>
-            <li>Search Trips</li>
-            <li>How to use</li>
-            <li>Join to ride</li>
-            <li>News</li>
+            <Link href='/home'>
+              Home
+            </Link>
+            <Link href='/#'>
+              Search Trips
+            </Link>
+            <Link href='/#'>
+              How to use
+            </Link>
+            <Link href='/#'>
+              Join to ride
+            </Link>
+            <Link href='/#'>
+              News
+            </Link>
           </ul>
           {/* drive button */}
           <button
             className='rounded-md text-base font-bold bg-white text-secondary px-2 py-2
           '
+            onClick={() => router.push('overview')}
           >
             Join to drive
           </button>
