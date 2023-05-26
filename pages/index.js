@@ -2,6 +2,8 @@ import Head from 'next/head';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import Image from 'next/image';
+// import AddModeratorOutlinedIcon from '@mui/icons-material/AddModeratorOutlined';
+// import DirectionsCarFilledOutlinedIcon from '@mui/icons-material/DirectionsCarFilledOutlined';
 
 export default function Home() {
   return (
@@ -12,22 +14,59 @@ export default function Home() {
         <link rel='icon' href='/favicon.ico' />
       </Head>
 
-      <Navbar />
+      {/* showcase */}
+      <div className='car-vid py-5 text-[#fff] text-center'>
+        <Navbar />
+
+        <div className='flex flex-col gap-5 pt-16'>
+          <Image
+            src='/img/vid.png'
+            width={70}
+            height={50}
+            loading='lazy'
+            alt='car'
+            className='self-center cursor-pointer'
+          />
+          <h3 className='text-3xl font-[600] capitalize mt-5'>
+            Experience The joy of a <br /> service Built for you
+          </h3>
+
+          <div className='text-center'>
+            <p className='tracking-widest text-sm my-4'>Download on</p>
+            <div className='flex items-center justify-center gap-10'>
+              <Image
+                src='/img/appStore.png'
+                width={100}
+                height={200}
+                loading='lazy'
+                alt='car'
+              />
+              <Image
+                src='/img/googleplay.png'
+                width={100}
+                height={200}
+                loading='lazy'
+                alt='car'
+              />
+            </div>
+          </div>
+        </div>
+      </div>
 
       {/* quick glance section */}
       <section>
-        <div className='flex items-center justify-around my-5 px-24 py-6'>
+        <div className='flex flex-col lg:flex-row items-center justify-around my-5 gap-10 p-16 lg:px-24 py-6'>
           {/* glance col */}
-          <div className='w-1/2 flex flex-col gap-4'>
-            <h2 className='capitalize font-medium text-3xl text-[#129CE9] w-2/3'>
+          <div className='lg:w-1/2 flex flex-col gap-4'>
+            <h2 className='capitalize font-medium text-3xl text-[#129CE9] lg:w-2/3 w-full'>
               A quick glance at what Makes us special
             </h2>
-            <p className='w-2/3 text-[#6C6969]'>
+            <p className='lg:w-2/3 w-full  text-[#6C6969]'>
               LagosRide is a mobility solution that will allow users book and
               share the cost of a ride with similar transit patterns.
             </p>
 
-            <p className='w-2/3 text-[#787777]'>
+            <p className='lg:w-2/3 w-full text-[#787777]'>
               It will link users up based on their preferred pick and drop off
               points, each not more than 1km apart respectively, and a pick-up
               time not more than 5mins apart
@@ -35,72 +74,239 @@ export default function Home() {
           </div>
           {/* card col */}
 
-          <div className='card  rounded-2xl bg-white max-w-[350px]'>
+          <div className='shadow-lg card rounded-2xl bg-white max-w-[350px]'>
             <div className='glance-card' />
             <div className='py-6 px-8'>
+              <div className='flex items-start gap-3'>
+                <div className='bg-[#D92F6C]/20 p-2 rounded-full'>
+                  <Image
+                    src='/img/glanceIcon1.png'
+                    width={15}
+                    height={15}
+                    loading='lazy'
+                    className='text-[#d92f6c]'
+                    alt='test-logo'
+                  />
+                </div>
 
-            <div className='flex items-start gap-3'>
-              <div className='bg-[#D92F6C]/20 p-2 rounded-full'>
-                <Image
-                  src='/img/glanceIcon1.png'
-                  width={15}
-                  height={15}
-                  loading='lazy'
-                  className='text-[#d92f6c]'
-                  alt='test-logo'
-                />
+                <p className='text-[#6C6969] border-b border-gray-400 pb-5 text-sm w-2/3'>
+                  Reduces the frequency of &quot; single occupancy Vehicles(SOV)
+                  &quot; resulting from cheaper fares per trip.
+                </p>
               </div>
+              <div className='flex items-start gap-3 my-5'>
+                <div className='bg-[#2FD9CF]/30 p-2 rounded-full'>
+                  <Image
+                    src='/img/glanceIcon1.png'
+                    width={15}
+                    height={15}
+                    loading='lazy'
+                    className='text-[#2FD9CF]                    ]'
+                    alt='test-logo'
+                  />
+                </div>
 
-              <p className='text-[#6C6969] border-b border-gray-400 pb-5 text-sm w-2/3'>
-                Reduces the frequency of &quot; single occupancy Vehicles(SOV)
-                &quot; resulting from cheaper fares per trip.
-              </p>
-            </div>
-            <div className='flex items-start gap-3 my-5'>
-              <div className='bg-[#D92F6C]/20 p-2 rounded-full'>
-                <Image
-                  src='/img/glanceIcon1.png'
-                  width={15}
-                  height={15}
-                  loading='lazy'
-                  className='text-[#d92f6c]'
-                  alt='test-logo'
-                />
+                <p className='text-[#6C6969] border-b border-gray-400 pb-5 text-sm w-2/3'>
+                  You will now enjoy the comfort of a car ride but pay less
+                </p>
               </div>
+              <div className='flex items-start gap-3 mt-5'>
+                <div className='bg-[#472FD9]/20 p-2 rounded-full '>
+                  <Image
+                    src='/img/glanceIcon1.png'
+                    width={15}
+                    height={15}
+                    loading='lazy'
+                    className='text-[#d92f6c]'
+                    alt='test-logo'
+                  />
+                </div>
 
-              <p className='text-[#6C6969] border-b border-gray-400 pb-5 text-sm w-2/3'>
-              You will now enjoy the comfort of a car ride but pay less
-              </p>
-            </div>
-            <div className='flex items-start gap-3 mt-5'>
-              <div className='bg-[#D92F6C]/20 p-2 rounded-full '>
-                <Image
-                  src='/img/glanceIcon1.png'
-                  width={15}
-                  height={15}
-                  loading='lazy'
-                  className='text-[#d92f6c]'
-                  alt='test-logo'
-                />
+                <p className='text-[#6C6969] text-sm w-2/3'>
+                  Drivers will now earn more revenue per trip
+                </p>
               </div>
-
-              <p className='text-[#6C6969] text-sm w-2/3'>
-              Drivers will now earn more revenue per trip
-              </p>
             </div>
-            </div>
-
-           
           </div>
         </div>
       </section>
 
       {/* car ride section */}
       <section>
-        <div className='flex items-center justify-center'>
-          <Image src='/img/car.jpg' width={200} height={300} loading='lazy' alt='car'/>
+        <div className='my-10 mx-auto'>
+          <div className='flex flex-col items-center'>
+            
+          <div className='bg-[#FFFDE8] rounded-md p-4 max-w-[300px] my-5'>
+            <div className='flex items-center gap-3'>
+              <div className='rounded-full bg-white'>
+                {/* <AddModeratorOutlinedIcon className='text-[#776D02]' /> */}
+              </div>
+              <h3 className='text-base font-semibold'>Security</h3>
+            </div>
+            <p className='text-xs'>
+              At enabled dashcams and panic/SOS buttons are onboard to keep you
+              safe while in transit.
+            </p>
+          </div>
+          <div className='bg-[#DCFFFD] rounded-md p-4 max-w-[300px] my-5'>
+            <div className='flex items-center gap-3'>
+              <div className='rounded-full bg-white'>
+                {/* <DirectionsCarFilledOutlinedIcon className='text-[#00615C]' /> */}
+              </div>
+              <h3 className='text-base font-semibold'>
+                Ride in style,every time
+              </h3>
+            </div>
+            <p className='text-xs'>
+              Tired of old cars and buses? Try out our selection of brand new
+              cars and share your transit moments with your friends
+            </p>
+          </div>
+          <div className='bg-[#FFE5FA] rounded-md p-4 max-w-[300px] my-5'>
+            <div className='flex items-center gap-3'>
+              <div className='rounded-full bg-white'>
+                {/* <DirectionsCarFilledOutlinedIcon className='text-[#2096D9]' /> */}
+              </div>
+              <h3 className='text-base font-semibold'>Fixed Daily Transit</h3>
+            </div>
+            <p className='text-xs'>
+              Take the edge off by scheduling daily recurring trips that take
+              you to and from work, church, mosque or anywhere
+            </p>
+          </div>
+          </div>
+
+          <Image
+            src='/img/car.png'
+            width={600}
+            height={300}
+            loading='lazy'
+            alt='car'
+            className='mx-auto'
+          />
         </div>
       </section>
+
+      {/* Download section */}
+      <section>
+        <div className='text-center'>
+          <p className='tracking-widest text-sm my-4'>Download on</p>
+          <div className='flex items-center justify-center gap-10'>
+            <Image
+              src='/img/appStore.png'
+              width={100}
+              height={200}
+              loading='lazy'
+              alt='car'
+            />
+            <Image
+              src='/img/googleplay.png'
+              width={100}
+              height={200}
+              loading='lazy'
+              alt='car'
+            />
+          </div>
+        </div>
+      </section>
+
+      {/* Book a ride section */}
+      <div className='text-center my-10'>
+        <h3 className='text-2xl text-[#129CE9] capitalize font-[600]'>
+          Book a ride to start moving in style
+        </h3>
+        <p className='text-[#787777] text-sm'>
+          Experience Lagos in a LagosRide, search for trips and get to know your{' '}
+          <br /> fare estimate.
+        </p>
+      </div>
+
+      {/* fare estimate */}
+      <div className='bg-[#f4f4f4] flex items-center justify-center gap-3 rounded-md my-10 max-w-fit px-4 py-2 mx-auto'>
+        <button className='uppercase text-sm text-white btn px-4 py-2 rounded-md '>
+          free estimate
+        </button>
+
+        <h3 className='uppercase font-medium'>Search trips</h3>
+      </div>
+
+      {/*  testimony section*/}
+      <div className='showcase text-center py-5 text-white p-4'>
+        <h3 className='text-lg lg:text-2xl capitalize font-[600]'>
+          Dont Just Take our word for it
+        </h3>
+        <p className='text-xs leading-6 lg:text-sm text-white/80'>
+          See what our Club 5.0 members are saying. Club 5.0 the are first 
+         50 individuals to experience LagosRide
+        </p>
+
+        <div className='flex items-center flex-col justify-center p-4'>
+          <div className='ride-box flex flex-col items-center max-w-[500px] py-5 px-4 rounded-md my-10'>
+            <Image
+              src='/img/oyin.png'
+              width={50}
+              height={50}
+              loading='lazy'
+              alt='car'
+              className='rounded-full border-dashed border-white border-[1px] p-[2px] mt-[-50px]'
+            />
+            <p className='text-sm text-white/80 mt-3'>
+              LagosRide is such a great innovation! I really love their ride
+              classifications that allowed me to book a cab with two passengers
+              going in my direction! With the way its going, thered be fewer
+              cars on the road by 2025! Kudos!
+            </p>
+          </div>
+        </div>
+
+        <button className='uppercase text-sm text-white btn w-fit lg:w-1/5 py-2 rounded-sm mt-2 lg:mt-5 px-4 whitespace-nowrap'>
+          Register for club 5.0
+        </button>
+      </div>
+
+      {/* drive with us */}
+      <div className='text-center my-10'>
+        <h3 className='text-2xl text-[#129CE9] capitalize font-[600] my-3'>
+          Drive with us
+        </h3>
+        <p className='text-[#787777] text-sm'>
+          Yes!!! you can be better than your neighbour,you will earn <br />
+          more for each shared trip you fulfil on LagosRide
+        </p>
+
+        <button className='uppercase text-sm text-white btn w-fit px-4 lg:w-1/5 py-2 rounded-sm mt-5 whitespace-nowrap'>
+          Join to drive
+        </button>
+      </div>
+
+      {/* want a free ride */}
+      <div className='text-center mt-10 py-5 bg-[#f4f4f4]'>
+        <h3 className='text-2xl text-[#129CE9] capitalize font-[600]'>
+          Want a free ride? Download Now
+        </h3>
+        <p className='text-[#787777] text-sm'>
+          Refer a friend to win free rides, concert tickets, and so much more on
+          LagosRide.
+        </p>
+
+        <p className='text-xs mt-5'>Available for all mobile devices</p>
+        <div className='flex items-center justify-center gap-10 mt-3 mb-10'>
+          <Image
+            src='/img/appStore.png'
+            width={100}
+            height={200}
+            loading='lazy'
+            alt='car'
+          />
+          <Image
+            src='/img/googleplay.png'
+            width={100}
+            height={200}
+            loading='lazy'
+            alt='car'
+          />
+        </div>
+      </div>
 
       <Footer />
     </div>

@@ -31,8 +31,15 @@ a {
 @tailwind utilities;
 
 .showcase {
+  background-image: url('/img/map.jpg');
+  background-size: cover;
+  background-position: top;
+}
+
+.car-vid {
   background-image: url('/img/showcase.jpg');
   background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .glance-card {
@@ -41,6 +48,24 @@ a {
   height: 10px;
 }
 
+.btn {
+  background: linear-gradient(105.78deg, #2fb5d9 30.68%, #6fdb7a 130.02%);
+}
+
 .card {
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.car-shadow {
+  filter: drop-shadow(5px 5px 10px #555);
+}
+
+.ride-box {
+  background: linear-gradient(
+    129.81deg,
+    rgba(255, 255, 255, 0.3) -4.6%,
+    rgba(255, 255, 255, 0.1) 102.24%
+  );
+  box-shadow: 0px 1px 24px rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
 }

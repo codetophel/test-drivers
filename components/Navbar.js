@@ -1,3 +1,4 @@
+import { MenuOutlined } from '@mui/icons-material';
 import Image from 'next/image';
 import React from 'react';
 
@@ -5,7 +6,7 @@ function Navbar() {
   return (
     <div>
       {/* web navbar */}
-      <div className='py-4 px-20 mt-5 bg-darkNav flex items-center justify-between'>
+      <div className='hidden py-3 px-20 bg-darkNav lg:flex items-center justify-between'>
         {/* logo */}
         <Image
           src='/img/logoo.png'
@@ -32,6 +33,19 @@ function Navbar() {
             Join to drive
           </button>
         </div>
+      </div>
+
+      <div className='lg:hidden bg-darkNav flex items-center justify-between p-4'>
+        <Image
+          src='/img/logoo.png'
+          width={150}
+          height={200}
+          loading='lazy'
+          alt='test-logo'
+          className='ml-6'
+        />
+
+        <MenuOutlined className='h-5 w-5' />
       </div>
     </div>
   );
