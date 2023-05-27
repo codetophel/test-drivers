@@ -20,7 +20,7 @@ export default function Nav() {
 
               {/* links */}
               <div className='hidden md:block'>
-                <ul className='flex md:gap-5 lg:gap-7 items-center font-medium lg:font-normal text-xs lg:text-base text-textBlue'>
+                <ul className='flex md:gap-5 lg:gap-7 items-center font-medium lg:font-normal text-xs lg:text-base text-textBlue whitespace-nowrap'>
                   <li>
                     <Link href={'/home'}>Home</Link>
                   </li>
@@ -80,7 +80,7 @@ export default function Nav() {
 
               {/* links */}
               <div className=''>
-                <ul className='text-textBlue'>
+                <ul className='text-textBlue whitespace-nowrap'>
                   <li>
                     <Link href={'/home'}>Home</Link>
                   </li>
