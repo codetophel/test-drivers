@@ -133,10 +133,10 @@ export default function Home() {
 
       {/* car ride section */}
       <section>
-        <div className='my-10 lg:p-6 mx-auto'>
-          <div className='flex lg:flex-row flex-col items-center justify-center'>
+        <div className='my-10 slg:p-6 mx-auto'>
+          <div className='flex slg:flex-row flex-col items-center justify-center'>
             <div className='flex flex-col items-center'>
-              <div className='bg-[#DCFFFD] rounded-2xl p-4 max-w-[300px] lg:mb-[-5%] lg:ml-[-80%]'>
+              <div className='bg-[#DCFFFD] rounded-2xl p-4 max-w-[300px] slg:mb-[-5%] slg:ml-[-80%]'>
                 <div className='flex items-center gap-3'>
                   <div className='rounded-full bg-white p-2'>
                     <DirectionsCarFilledOutlinedIcon className='text-[#00615C]' />
@@ -158,7 +158,7 @@ export default function Home() {
                 alt='car'
                 className='mx-auto car-shadow'
               />
-              <div className='bg-[#FFE5FA] rounded-2xl p-4 max-w-[300px] my-5 lg:mt-[-5%] lg:ml-[-60%]'>
+              <div className='bg-[#FFE5FA] rounded-2xl p-4 max-w-[300px] my-5 slg:mt-[-5%] slg:ml-[-60%]'>
                 <div className='flex items-center gap-3'>
                   <div className='rounded-full bg-white p-2'>
                     <DirectionsCarFilledOutlinedIcon className='text-[#2096D9]' />
@@ -173,7 +173,7 @@ export default function Home() {
                 </p>
               </div>
             </div>
-            <div className='bg-[#FFFDE8] rounded-2xl p-4 max-w-[300px] lg:mt-[-20%] lg:ml-[-13%]'>
+            <div className='bg-[#FFFDE8] rounded-2xl p-4 max-w-[300px] slg:mt-[-20%] slg:ml-[-13%]'>
               <div className='flex items-center gap-3'>
                 <div className='rounded-full bg-white p-2'>
                   <AddModeratorOutlinedIcon className='text-[#776D02]' />
