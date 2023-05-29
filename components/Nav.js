@@ -79,8 +79,8 @@ export default function Nav() {
               </div>
 
               {/* links */}
-              <div className=''>
-                <ul className='text-textBlue whitespace-nowrap'>
+              <div className='px-6'>
+                <ul className='text-textBlue whitespace-nowrap flex flex-col items-center justify-center gap-10 mt-10 pt-5'>
                   <li>
                     <Link href={'/home'}>Home</Link>
                   </li>
@@ -99,7 +99,7 @@ export default function Nav() {
                   <li>
                     <Link href={''}>Gallery</Link>
                   </li>
-                  <li className=' w-fit py-2 px-5 bg-gradient-to-t from-lBlue to-green text-white rounded-lg'>
+                  <li className=' w-full text-center py-2 px-5 bg-gradient-to-t from-lBlue to-green text-white rounded-lg'>
                     <Link href={'/register'}>Join to drive</Link>
                   </li>
                 </ul>
