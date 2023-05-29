@@ -15,7 +15,7 @@ function Navbar() {
       <div className='slg:px-24'>
         <div className='flex justify-between items-baseline'>
           {/* logo */}
-          <Link href={''}>
+          <Link href={'/home'}>
             {/* eslint-disable-next-line */}
             <img className='w-[10rem]' src='../img/logoo.png' alt='' />
           </Link>
@@ -66,7 +66,7 @@ function Navbar() {
           {/* logo */}
           <div className='flex justify-between items-center'>
             {/* logo */}
-            <Link href={''}>
+            <Link href={'/home'}>
               {/* eslint-disable-next-line */}
               <img className='w-[10rem]' src='../img/logo.png' alt='' />
             </Link>

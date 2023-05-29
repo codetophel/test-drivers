@@ -13,7 +13,7 @@ export default function Nav() {
           <div>
             <div className='flex justify-between items-baseline'>
               {/* logo */}
-              <Link href={''}>
+              <Link href={'/home'}>
                 {/* eslint-disable-next-line */}
                 <img className='w-[10rem]' src='../img/logo.png' alt='' />
               </Link>
@@ -67,8 +67,8 @@ export default function Nav() {
               {/* logo */}
               <div className='flex justify-between items-center'>
                 {/* logo */}
-                <Link href={''}>
-                {/* eslint-disable-next-line */}
+                <Link href={'/home'}>
+                  {/* eslint-disable-next-line */}
                   <img className='w-[10rem]' src='../img/logo.png' alt='' />
                 </Link>
 
